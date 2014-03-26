@@ -57,7 +57,7 @@
             this.shadowRoot.innerHTML = '';
 
             // Adds a template clone into shadow root
-            var clone = template.cloneNode(true);
+            var clone = thatDoc.importNode(template, true);
             this.shadowRoot.appendChild(clone);
         }
 
