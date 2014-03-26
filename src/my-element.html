@@ -25,6 +25,7 @@
         // Fires when an instance of the element is created
         MyElementProto.createdCallback = function() {
             var myElement = thatDoc.querySelector('my-element');
+            this.strong = template.querySelector('strong');
 
             // Checks if the name attribute has been overwritten
             if (myElement.hasAttribute('name')) {
@@ -48,8 +49,7 @@
             this.name = val;
 
             // Sets name value into <strong>
-            var strong = template.querySelector('strong');
-            strong.textContent = this.name;
+            this.strong.textContent = this.name;
 
             // Verifies if shadow root already exists
             if (this.root) {
