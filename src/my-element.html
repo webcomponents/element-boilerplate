@@ -16,11 +16,8 @@
         // Creates an object based in the HTML Element prototype
         var MyElementProto = Object.create(HTMLElement.prototype);
 
-        // Creates the "name" attribute
-        Object.defineProperty(MyElementProto, "name", {
-            value: 'World',
-            writable: true
-        });
+        // Creates the "name" attribute and sets a default value
+        MyElementProto.name = 'World';
 
         // Fires when an instance of the element is created
         MyElementProto.createdCallback = function() {
