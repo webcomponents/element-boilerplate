@@ -22,7 +22,12 @@
         // Fires when an instance of the element is created
         MyElementProto.createdCallback = function() {
             var myElement = thatDoc.querySelector('my-element');
+
+            // Caches <strong> DOM query
             this.strong = template.querySelector('strong');
+
+            // Creates the shadow root
+            this.shadowRoot = this.createShadowRoot();
 
             // Checks if the name attribute has been overwritten
             if (myElement.hasAttribute('name')) {
@@ -48,17 +53,12 @@
             // Sets name value into <strong>
             this.strong.textContent = this.name;
 
-            // Verifies if shadow root already exists
-            if (this.root) {
-                this.root.innerHTML = '';
-            }
-            else {
-                this.root = this.createShadowRoot();
-            }
+            // Removes shadow root content
+            this.shadowRoot.innerHTML = '';
 
             // Adds a template clone into shadow root
             var clone = template.cloneNode(true);
-            this.root.appendChild(clone);
+            this.shadowRoot.appendChild(clone);
         }
 
         // Registers <my-element> in the main document
