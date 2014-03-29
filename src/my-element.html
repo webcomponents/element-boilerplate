@@ -8,7 +8,7 @@
         var thatDoc = document;
 
         // Refers to the "importee", which is src/my-element.html
-        var thisDoc = document.currentScript.ownerDocument;
+        var thisDoc = document._currentScript.ownerDocument;
 
         // Gets content from <template>
         var template = thisDoc.querySelector('template').content;
