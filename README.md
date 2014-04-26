@@ -16,7 +16,7 @@ Install the component using [Bower](http://bower.io/):
 $ bower install element-boilerplate --save
 ```
 
-Or [download as ZIP](https://github.com/webcomponents/element-boilerplate/archive/gh-pages.zip).
+Or [download as ZIP](https://github.com/webcomponents/element-boilerplate/archive/master.zip).
 
 ## Usage
 
@@ -75,14 +75,13 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 3. To test your project, start the development server and open `http://localhost:8000`.
 
     ```sh
-    $ grunt
+    $ grunt server
     ```
 
-4. Once you finish developing it, build the distribution files and publish it on Bower.
+4. To provide a live demo, send everything to `gh-pages` branch.
 
     ```sh
-    $ grunt build
-    $ bower register my-element https://github.com/you/my-element
+    $ grunt deploy
     ```
 
 ## Contributing
