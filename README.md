@@ -1,9 +1,8 @@
 # &lt;my-element&gt;
 
-> This is a bare minimum custom element starter-kit.
+> A bare minimum custom element starter-kit using [VanillaJS](http://vanilla-js.com/).
 >
-> Looking for a working example? Check [Hello World](https://github.com/webcomponents/hello-world-element)
-> element using [VanillaJS](http://vanilla-js.com/).
+> Looking for a working example? Check [hello-world-element](https://github.com/webcomponents/hello-world-element).
 
 ## Demo
 
@@ -14,7 +13,7 @@
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install my-element --save
+$ bower install element-boilerplate --save
 ```
 
 Or [download as ZIP](https://github.com/webcomponents/element-boilerplate/archive/gh-pages.zip).
@@ -30,7 +29,7 @@ Or [download as ZIP](https://github.com/webcomponents/element-boilerplate/archiv
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/my-element/src/my-element.html">
+    <link rel="import" href="bower_components/element-boilerplate/src/my-element.html">
     ```
 
 3. Start using it!
