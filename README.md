@@ -1,4 +1,4 @@
-# &lt;my-element&gt;
+# &lt;my-repo&gt;
 
 > A bare minimum custom element starter-kit using [VanillaJS](http://vanilla-js.com/).
 >
