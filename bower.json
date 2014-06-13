@@ -13,6 +13,6 @@
         "bower_components"
     ],
     "dependencies": {
-        "platform": "Polymer/platform#~0.2.4"
+        "platform": "Polymer/platform#~0.3.2"
     }
 }
