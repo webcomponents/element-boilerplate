@@ -2,6 +2,8 @@
 
 > A bare minimum custom element starter-kit using [VanillaJS](http://vanilla-js.com/).
 >
+> Like [Yeoman](http://yeoman.io/)? Use the [generator-element](https://www.npmjs.org/package/generator-element) instead.
+>
 > Looking for a working example? Check [hello-world-element](https://github.com/webcomponents/hello-world-element).
 
 ## Demo
