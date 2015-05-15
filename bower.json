@@ -3,13 +3,12 @@
     "version": "0.0.0",
     "description": "My awesome Custom Element",
     "license": "MIT",
-    "main": "src/my-element.html",
+    "main": "my-element.html",
     "keywords": [
         "web-components"
     ],
     "ignore": [
         "**/.*",
-        "node_modules",
         "bower_components"
     ],
     "dependencies": {
