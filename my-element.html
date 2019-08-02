@@ -2,7 +2,16 @@
 (function() {
     // Creates an object based in the HTML Element prototype
     var element = Object.create(HTMLElement.prototype);
-
+    
+    
+    // the function ElementConstructor is a unique constructor that first calls 
+    // the superclass (parent class), HTMLElement's, constructor with
+    // the context of the new element object, then allows for 
+    // modification of the new object, the constructor's context.
+    element.prototype.constructor = function ElementConstructor() {
+        HTMLElement.apply(this, arguments);
+        // do other stuff with element object on construct invocation 
+    }
     // Fires when an instance of the element is created
     element.createdCallback = function() {};
 
