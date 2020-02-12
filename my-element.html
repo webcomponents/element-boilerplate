@@ -1,23 +1,28 @@
 <script>
-(function() {
-    // Creates an object based in the HTML Element prototype
-    var element = Object.create(HTMLElement.prototype);
+    // Creates MyElements extending HTML Element
+    class MyElement extends HTMLElement {
+        // Fires when an instance of the element is created or updated
+        constructor() {
+            super();
+        }
 
-    // Fires when an instance of the element is created
-    element.createdCallback = function() {};
+        // Fires when an instance was inserted into the document
+        connectedCallback() {
+        }
 
-    // Fires when an instance was inserted into the document
-    element.attachedCallback = function() {};
+        // Fires when an instance was removed from the document
+        disconnectedCallback() {
+        }
 
-    // Fires when an instance was removed from the document
-    element.detachedCallback = function() {};
+        // Fires when an attribute was added, removed, or updated
+        attributeChangedCallback(attrName, oldVal, newVal) {
+        }
 
-    // Fires when an attribute was added, removed, or updated
-    element.attributeChangedCallback = function(attr, oldVal, newVal) {};
+        // Fires when an element is moved to a new document
+        adoptedCallback() {
+        }
+    }
 
     // Registers custom element
-    document.registerElement('my-element', {
-        prototype: element
-    });
-}());
+    window.customElements.define('my-element', MyElement);
 </script>
